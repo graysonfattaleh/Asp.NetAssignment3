@@ -1,0 +1,75 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+
+}
+@model MovieEntry
+
+    <h1 class="center_text">Add a Movie!</h1>
+
+    <div class="main_container curved_borders">
+
+        <div class="form_box">
+            <form name="user_form" method="post" asp-action="MoviePost">
+
+                <div class="form-group">
+                    <label asp-for="Title">Title</label>
+                    <input type="text" class="form-control" asp-for="Title" placeholder="Enter Title">
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Category">Category</label>
+                    <input type="text" class="form-control" asp-for="Category" placeholder="Enter Category">
+
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Director">Director</label>
+                    <input type="text" class="form-control" asp-for="Director" placeholder="Enter Director" />
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Year">Year</label>
+                    <input type="text" class="form-control" asp-for="Year" placeholder="Enter Year" />
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Rating">Rating</label>
+                    <select class="form-control" asp-for="Rating">
+                        <option value="G">G</option>
+                        <option value="PG">PG</option>
+                        <option value="PG13">PG-13</option>
+                        <option value="R">R</option>
+                    </select>
+
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Edited">Edited</label>
+                    <select class="form-control" asp-for="Edited">
+                        <option value="False">False</option>
+                        <option value="True">True</option>
+                    </select>
+
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="LentTo">Lent To: </label>
+                    <input type="text" class="form-control" asp-for="LentTo" placeholder="Lent To">
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Notes">Notes: </label>
+                    <input type="text" class="form-control" asp-for="Notes" placeholder="Notes" maxlength="25">
+                </div>
+
+
+                <center> <button class="btn btn-primary center" type="submit">Add Movie</button></center>
+
+
+            </form>
+            <br />
+            <div asp-validation-summary="All" class="error_message"></div>
+        </div>
+    </div>

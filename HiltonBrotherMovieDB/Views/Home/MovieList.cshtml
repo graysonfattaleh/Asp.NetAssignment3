@@ -1,0 +1,75 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{ 
+  
+}
+@model IEnumerable<HiltonBrotherMovieDB.Models.MovieEntry>
+
+
+<div class="main_container center" style="width:50vw;">
+
+    @if(HiltonBrotherMovieDB.Models.TempStorage.movieEntries.Any())
+    {
+    ViewBag.EmptyStatus = "";
+    }
+    else
+    {
+    ViewBag.EmptyStatus = "No Movies Entered yet!";
+    }
+
+    <h2 class="center_text">@ViewBag.EmptyStatus</h2>
+
+    @foreach (HiltonBrotherMovieDB.Models.MovieEntry MovieEntered in HiltonBrotherMovieDB.Models.TempStorage.movieEntries)
+    {
+        <div class="line_item">
+            <h3 class="center_text"> @MovieEntered.Title</h3>
+            <br />
+            <div class="column" style="float:left;">
+                <h4>Movie Details</h4>
+                <ul>
+                    <li>
+                        Rating: @MovieEntered.Rating
+                    </li>
+                    <li>
+                        Director: @MovieEntered.Director
+                    </li>
+                    <li>
+                        Year: @MovieEntered.Year
+                    </li>
+                </ul>
+            </div>
+            <div class="column" style="float:right;">
+                <h4>Personal Notes</h4>
+                <ul>
+                    <li>
+                        Lent To: @if (MovieEntered.LentTo != null)
+                        { ViewBag.Lent = MovieEntered.LentTo; }
+                        else
+                        { ViewBag.Lent = "No One"; }
+                        @ViewBag.Lent
+                    </li>
+                    <li>
+                        Notes: @if (MovieEntered.Notes != null)
+                        { ViewBag.Notes = MovieEntered.Notes; }
+                        else
+                        { ViewBag.Notes = "No Notes"; }
+                        @ViewBag.Notes
+                    </li>
+                    <li>
+                        Status: @if (MovieEntered.Edited == true)
+                        { ViewBag.EditedStatus = "Edited"; }
+                        else
+                        { ViewBag.EditedStatus = "Not Edited"; }
+
+                        @ViewBag.EditedStatus
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <hr />
+    }
+</div>
+   
+    
+
