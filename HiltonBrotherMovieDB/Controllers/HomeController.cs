@@ -51,7 +51,7 @@ namespace HiltonBrotherMovieDB.Controllers
         // movie list
         public IActionResult MovieList()
         {
-            return View(TempStorage.movieEntries);
+            return View(TempStorage.movieEntries.Where(movie => movie.Title != "Independance Day"));
         }
 
         public IActionResult Podcasts()
