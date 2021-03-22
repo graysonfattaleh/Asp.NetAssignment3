@@ -1,11 +1,11 @@
 ﻿<Properties StartupConfiguration="{30D3254C-30FC-451D-AE11-16653FE981A4}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="HiltonBrotherMovieDB/Views/Shared/_Layout.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="HiltonBrotherMovieDB/wwwroot/js/scriptz.js">
     <Files>
       <File FileName="HiltonBrotherMovieDB/Models/TempStorage.cs" Line="2" Column="1" />
-      <File FileName="HiltonBrotherMovieDB/Views/Home/MovieList.cshtml" Line="12" Column="21" />
-      <File FileName="HiltonBrotherMovieDB/wwwroot/css/new_styles.css" />
+      <File FileName="HiltonBrotherMovieDB/Views/Home/MovieList.cshtml" />
+      <File FileName="HiltonBrotherMovieDB/wwwroot/css/new_styles.css" Line="75" Column="12" />
       <File FileName="HiltonBrotherMovieDB/Models/MovieEntry.cs" />
-      <File FileName="HiltonBrotherMovieDB/Views/Home/MoviePost.cshtml" Line="59" Column="100" />
+      <File FileName="HiltonBrotherMovieDB/Views/Home/MoviePost.cshtml" />
       <File FileName="HiltonBrotherMovieDB/Models/ErrorViewModel.cs" />
       <File FileName="HiltonBrotherMovieDB/appsettings.Development.json" />
       <File FileName="HiltonBrotherMovieDB/appsettings.json" />
@@ -14,18 +14,19 @@
       <File FileName="HiltonBrotherMovieDB/Models/iMoviesRepository.cs" />
       <File FileName="HiltonBrotherMovieDB/Models/EFMoviesRepository.cs" />
       <File FileName="HiltonBrotherMovieDB/Program.cs" />
-      <File FileName="HiltonBrotherMovieDB/Controllers/HomeController.cs" Line="85" Column="48" />
-      <File FileName="HiltonBrotherMovieDB/Models/View Models/MovieList.cs" Line="7" Column="63" />
+      <File FileName="HiltonBrotherMovieDB/Controllers/HomeController.cs" />
+      <File FileName="HiltonBrotherMovieDB/Models/View Models/MovieList.cs" />
       <File FileName="HiltonBrotherMovieDB/Test.sqlite" />
       <File FileName="HiltonBrotherMovieDB/Migrations/20210322153301_InitialCreate.cs" />
       <File FileName="HiltonBrotherMovieDB/Migrations/20210322160006_second_guy.cs" />
       <File FileName="HiltonBrotherMovieDB/Models/SeedData.cs" />
       <File FileName="HiltonBrotherMovieDB/Views/_ViewImports.cshtml" />
-      <File FileName="HiltonBrotherMovieDB/Views/Home/EditMovie.cshtml" Line="59" Column="26" />
+      <File FileName="HiltonBrotherMovieDB/Views/Home/EditMovie.cshtml" />
       <File FileName="HiltonBrotherMovieDB/Views/Home/Podcasts.cshtml" />
-      <File FileName="HiltonBrotherMovieDB/Views/Home/Index.cshtml" Line="1" Column="1" />
-      <File FileName="HiltonBrotherMovieDB/Models/View Models/MovieEditList.cs" Line="12" Column="2" />
-      <File FileName="HiltonBrotherMovieDB/Views/Shared/_Layout.cshtml" Line="40" Column="1" />
+      <File FileName="HiltonBrotherMovieDB/Views/Home/Index.cshtml" />
+      <File FileName="HiltonBrotherMovieDB/Models/View Models/MovieEditList.cs" />
+      <File FileName="HiltonBrotherMovieDB/Views/Shared/_Layout.cshtml" />
+      <File FileName="HiltonBrotherMovieDB/wwwroot/js/scriptz.js" Line="3" Column="10" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -35,17 +36,16 @@
               <Node name="Dependencies" expanded="True" />
               <Node name="Controllers" expanded="True" />
               <Node name="Migrations" expanded="True" />
-              <Node name="Models" expanded="True">
-                <Node name="View Models" expanded="True" />
-              </Node>
+              <Node name="Models" expanded="True" />
               <Node name="Views" expanded="True">
                 <Node name="Home" expanded="True" />
-                <Node name="Shared" expanded="True">
-                  <Node name="_Layout.cshtml" selected="True" />
-                </Node>
+                <Node name="Shared" expanded="True" />
               </Node>
               <Node name="wwwroot" expanded="True">
                 <Node name="css" expanded="True" />
+                <Node name="js" expanded="True">
+                  <Node name="scriptz.js" selected="True" />
+                </Node>
               </Node>
               <Node name="appsettings.json" expanded="True" />
             </Node>

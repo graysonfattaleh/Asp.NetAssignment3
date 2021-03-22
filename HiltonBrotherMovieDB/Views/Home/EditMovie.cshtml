@@ -40,6 +40,7 @@
                     <input name="director" id="director" value="@movie.Director" />
                 </td>
                 <td>
+                    <input type ="hidden" name="rating_hidden" id="rating_hidden" value="@movie.Rating" />
                     <select id="rating" name="rating">
                         <option value="G">G</option>
                         <option value="PG">PG</option>
@@ -48,6 +49,8 @@
                     </select>
                 </td>
                 <td>
+                    
+                    <input type="hidden" name="edited_hidden" id="edited_hidden" value="@movie.Edited" />
                     <select id="edited" name="edited">
                         <option value="False">False</option>
                         <option value="True">True</option>
@@ -117,3 +120,5 @@
 
     </tbody>
 </table>
+
+<script src="~/js/scriptz.js"></script>
