@@ -9,6 +9,8 @@ namespace HiltonBrotherMovieDB.Models
   
     public class MovieEntry
     {
+        [Key]
+        public int MovieEntryID { get; set; }
         [Required(ErrorMessage = "Category is a required field")]
         public String Category { get; set; }
 

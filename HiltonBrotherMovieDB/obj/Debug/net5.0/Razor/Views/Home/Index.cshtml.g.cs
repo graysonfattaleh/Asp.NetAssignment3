@@ -26,8 +26,15 @@ using HiltonBrotherMovieDB.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "/Users/graysonfattaleh/Projects/HiltonBrotherMovieDB/HiltonBrotherMovieDB/Views/_ViewImports.cshtml"
+using HiltonBrotherMovieDB.Models.ViewModels;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"d46487521758884e7108204081698b81c758c86f", @"/Views/Home/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"4dc04d62ac0c2829235df7d483579cbe4ce45686", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"660f1e76ca737dcd01dfa230e346628caf6ad26e", @"/Views/_ViewImports.cshtml")]
     public class Views_Home_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("style", new global::Microsoft.AspNetCore.Html.HtmlString("border-radius:15px;"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -65,7 +72,7 @@ using HiltonBrotherMovieDB.Models;
 #line hidden
 #nullable disable
             WriteLiteral("\n<div class=\"main_container\">\n    <h1 class=\"center_text\">The Joel Hilton Film Collection</h1>\n\n    <div class=\"profile_image\">  ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "d46487521758884e7108204081698b81c758c86f4195", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "d46487521758884e7108204081698b81c758c86f4415", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();

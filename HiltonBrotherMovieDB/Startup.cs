@@ -2,9 +2,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using HiltonBrotherMovieDB.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -24,6 +26,13 @@ namespace HiltonBrotherMovieDB
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            // connect context to db
+            services.AddDbContext<MoviesDBContext>(options =>
+                options.UseSqlite(Configuration["ConnectionStrings:MoviesDB"]));
+            // scoped stuff
+            services.AddScoped<IMoviesRepository, EFMoviesRepository>();
+
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -52,6 +61,10 @@ namespace HiltonBrotherMovieDB
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
+
+            // ensure migration and seed date
+            SeedData.EnsurePopulated(app);
         }
+
     }
 }

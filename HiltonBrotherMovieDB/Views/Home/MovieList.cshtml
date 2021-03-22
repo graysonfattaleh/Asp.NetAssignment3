@@ -4,12 +4,12 @@
 @{ 
   
 }
-@model IEnumerable<HiltonBrotherMovieDB.Models.MovieEntry>
 
+@model MovieList
 
 <div class="main_container center" style="width:50vw;">
 
-    @if(HiltonBrotherMovieDB.Models.TempStorage.movieEntries.Any())
+    @if(Model.Movies.Any())
     {
     ViewBag.EmptyStatus = "";
     }
@@ -20,7 +20,7 @@
 
     <h2 class="center_text">@ViewBag.EmptyStatus</h2>
 
-    @foreach (HiltonBrotherMovieDB.Models.MovieEntry MovieEntered in HiltonBrotherMovieDB.Models.TempStorage.movieEntries)
+    @foreach (MovieEntry MovieEntered in Model.Movies)
     {
         <div class="line_item">
             <h3 class="center_text"> @MovieEntered.Title</h3>
